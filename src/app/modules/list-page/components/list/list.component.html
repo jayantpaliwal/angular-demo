@@ -1,0 +1,17 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th><abbr title="Id">Id</abbr></th>
+      <th><abbr title="Name">Name</abbr></th>
+      <th><abbr title="Email">Email</abbr></th>
+      <th><abbr title="Phone">Phone</abbr></th>
+    </tr>
+
+    <tr *ngFor="let user of users;trackBy:trackByUser">
+      <td>{{ user.id | appendSign: '№' }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phone }}</td>
+    </tr>
+  </thead>
+</table>

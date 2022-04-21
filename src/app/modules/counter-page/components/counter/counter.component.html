@@ -1,0 +1,7 @@
+<div class="counter">
+  <div class="counter-block" (click)="onClicked()">
+    {{ counter$ | async }}
+  </div>
+
+  <button class="button" (click)="onReset()">Reset</button>
+</div>
